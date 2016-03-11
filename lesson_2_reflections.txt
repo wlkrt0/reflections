@@ -15,10 +15,19 @@ change?
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	Experimental features. Branches would allow bugfixes to continue on the master branch without overlapping with development of experimental features.
+
 How do the diagrams help you visualize the branch structure?
+
+	It's almost impossible to visualize the branch structure without the diagrams! Very helpful to see them graphically in relation to one another, rather than as a list.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	The commits for the old branch remain but the label for the old branch does not. The commit that merges two branches now has two parents: one for each branch.
+	We use the diagram because it preserves the history of the individual commits much better than by simply using timestamps.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+	Pros: Much faster and easier. Cons: Risk of breaking functionality or having to manually deal with merge conflicts anyway. Failure to understand nature of all changes that were silently merged without error.
